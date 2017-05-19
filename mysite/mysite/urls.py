@@ -17,7 +17,7 @@ from django.conf.urls import url,include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^polls/',include('polls.urls')),
+    url(r'^polls/',include('polls.urls', namespace='polls')),#添加命名空间以便区分多个应用时的指向
     url(r'^admin/', admin.site.urls),
     url(r'^',include('news.urls'))
 ]
