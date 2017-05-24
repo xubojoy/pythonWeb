@@ -102,3 +102,14 @@ def vote(request, question_id):
     # return render(request, vote_result)
     #-------------------
     # return HttpResponse('you are voting on question %s.' % question_id)
+
+# from django.core.mail import send_mail
+# from  mysite.settings import *
+#
+# @shared_task
+# def levemessage(message):
+#     email_title = 'django邮件测试'
+#     email_body = 'django邮件测试django邮件测试django邮件测试django邮件测试django邮件测试django邮件测试django邮件测试'
+#     email = 'xubojoy1112@163.com'  # 对方的邮箱
+#     send_status = send_mail(email_title, email_body, EMAIL_FROM, [email])
+#     print('mail sent')

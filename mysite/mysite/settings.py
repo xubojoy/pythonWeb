@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'news.apps.NewsConfig',
     'polls',
-    'myapp',
+    # 'myapp',
+    # 'modeltest',
+    # 'blog',
+    # 'myblog',
 ]
 
 MIDDLEWARE = [
@@ -117,7 +120,18 @@ USE_L10N = True
 USE_TZ = True
 
 
+
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = '752875355@qq.com' # 你的 QQ 账号
+EMAIL_HOST_PASSWORD = 'akvmvvjeknocbcac'
+EMAIL_USE_TLS = True # 这里必须是 True，否则发送不成功
+EMAIL_FROM = '752875355@qq.com' # 你的 QQ 账号
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
