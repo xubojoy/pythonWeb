@@ -1,0 +1,18 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>hello</title>#}
+{#    <link type="text/css" href="{{ url_for('static',filename='hello.css')}}">#}
+{#</head>#}
+{#<body>#}
+{#    hello {{ name }}#}
+{#</body>#}
+{#</html>#}
+
+{% extends 'master.html' %}
+{% block title %}hello{% endblock %}
+{% block body %}
+    hello {{ name }}
+    <a href="{{ url_for('index') }}"><button>home</button></a>
+{% endblock %}

@@ -1,0 +1,9 @@
+MANIFEST.in
+README
+setup.py
+facttest.egg-info/PKG-INFO
+facttest.egg-info/SOURCES.txt
+facttest.egg-info/dependency_links.txt
+facttest.egg-info/top_level.txt
+myfact/__init__.py
+myfact/fact.py
